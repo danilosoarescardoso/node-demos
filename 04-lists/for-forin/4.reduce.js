@@ -3,7 +3,7 @@ const { obterPessoas } = require("./service")
 Array.prototype.meuReduce = function(callback, valorInicial) {
   let valorFinal = typeof valorInicial !== undefined ? valorInicial : this[0]
   for (let i = 0; i < this.length; i++) {
-    valorFinal = callback(valorFinal, this[i], this)
+    valorFinal = callback(valorFinal, this[i], this) 
   }
   return valorFinal
 }
