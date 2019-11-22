@@ -3,7 +3,6 @@ const { obterPessoas } = require("./service")
 Array.prototype.meuFilter = function(callback) {
   const lista = []
   for (index in this) {
-    console.log(this[index])
     const item = this[index]
     const result = callback(item, index, this)
     if (!result) continue
